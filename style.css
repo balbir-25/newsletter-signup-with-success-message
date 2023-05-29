@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1em;
+    box-sizing: border-box;
+  }
+  
+  body {
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    min-width: 1340px;
+    background-color: hsl(234, 29%, 20%);
+  }
+  /* =============================START MAIN AREA=============================== */
+  /* =============================START SIGNUP SECTION AREA===================== */
+    #signup{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 1rem;
+        background-color: hsl(0, 0%, 100%);
+        margin:5rem 10rem;
+        border-radius: 25px;
+        justify-content: space-between;
+        padding: 2rem 1rem;
+
+    }
+
+    #info{
+        display: flex;
+        flex-direction: column;
+        margin-top: 5rem;
+        margin-left: 5rem;
+    }
+
+    .info-h1{
+        font-size: 4rem;
+        color: hsl(234, 29%, 20%);
+        font-weight: 700;
+        font-family: "Roboto";
+    }
+
+    .info-para{
+        font-size: 1.3rem;
+        color: hsl(235, 18%, 26%);
+        font-weight: 400;
+        font-family: "Roboto";
+        margin-top: 1rem;
+        line-height: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .info-div{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .info-span{
+        font-size: 1.3rem;
+        color: hsl(235, 18%, 26%);
+        font-weight: 400;
+        font-family: "Roboto";
+        margin-top: 1rem;
+        line-height: 1.3rem;
+    }
+
+    .span-img{
+        width: 17px;
+    }
+
+    .valid{
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .email-span{
+        font-size: 1rem;
+        color: hsl(235, 18%, 26%);
+        font-weight: 700;
+        font-family: "Roboto";
+    }
+
+    #invalid{
+        color: hsl(4, 100%, 67%);
+        font-size: 1rem;
+        font-weight: 700;
+        font-family: "Roboto";
+        display: none;
+    }
+
+    #mail{
+        margin-top: 2rem;
+        width: 100%;
+        padding: 0.6rem;
+        border: 1px solid hsl(231, 7%, 60%);
+        outline: none;
+        border-radius: 8px;
+        color:  hsl(235, 18%, 26%);
+        font-size: 1rem;
+        font-weight: 700;
+        font-family: "Roboto";
+        cursor: pointer;
+    }
+
+    #mail::placeholder{
+       color:  hsl(235, 18%, 26%);
+        font-size: 1rem;
+        font-weight: 400;
+        font-family: "Roboto";
+    }
+
+    #mail:focus{
+        border:1px solid hsl(234, 29%, 20%);
+    }
+
+  /* =============================END SIGNUP SECTION AREA===================== */
+  /* =============================START THANKS SECTION AREA===================== */
+  #thanks{
+    background-color: hsl(0, 0%, 100%);
+    margin:5rem 10rem;
+    border-radius: 25px;
+    justify-content: center;
+    padding: 3rem;
+    width: 450px;
+    margin-left:35%;
+    display: none;
+  }
+
+  .thanks-h2{
+    font-size: 2.5rem;
+    color: hsl(235, 18%, 26%);
+    font-weight: 700;
+    font-family: "Roboto";
+    margin-top: 3rem;
+    width: 250px;
+    line-height: 2.5rem;
+  }
+
+  .thanks-para{
+    font-size: 1rem;
+    color: hsl(234, 29%, 20%);
+    font-weight: 400;
+    font-family: "Roboto";
+    margin-top: 2rem;
+    line-height: 1.5rem;
+    width: 350px;
+  }
+
+  #email{
+    font-size: 1rem;
+    color: hsl(235, 18%, 26%);
+    font-weight: 700;   
+    font-family: "Roboto";
+  }
+  /* =============================END THANKS SECTION AREA===================== */
+  .btn{
+    padding: 1rem;
+    margin-top: 3rem;
+    background-color: hsl(235, 18%, 26%);
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: "Roboto";
+    border: none;
+    border-radius: 8px;
+  }
+
+  .btn:hover, .btn:focus{
+    background: linear-gradient(0.30turn, hsla(9, 100%, 67%, 0.692), hsl(9,100%, 67%));
+    box-shadow: 3px 3px 10px hsl(0, 100%, 67%);
+  }
+  /* =============================END MAIN AREA=============================== */
+    /* =============================START FOOTER  AREA=========================== */
+.foot {
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 20px;
+    color: hsl(0, 100%, 67%);
+    background-color: hsl(240, 10%, 16%);
+    float: bottom;
+  }
+  
+  .foot a {
+    text-decoration: none;
+    color: hsl(39, 100%, 56%);
+  }
+  
+  .foot a:hover {
+    color: hsl(300, 69%, 71%);
+  }
+  /* =============================END FOOTER  AREA=========================== */
+  /* =============================START MEDIA QUERY========================== */
+  @media screen and (max-width:375px) {
+    body{
+      min-width: 375px;
+    }
+
+    #signup{
+      flex-direction: column;
+      width: 100%;
+      margin: 0rem;
+      padding: 0rem;
+    }
+
+    .pic{
+      content: url(./assets/images/illustration-sign-up-mobile.svg);
+      width: 100%;
+    }
+
+    #info{
+      margin: 0rem;
+      padding: 3rem 2rem;
+    }
+
+    .info-h1{
+      font-size: 3rem;
+    }
+
+    .info-para, .info-span{
+      font-size: 1rem;
+    }
+
+    .btn{
+      font-size: 1.2rem;
+    }
+
+    #thanks{
+      margin: 0rem;
+      width: 375px;
+      padding: 7rem 2rem;
+      border-radius: 0 0 20px 20px;
+    }
+
+    .thanks-para{
+      width: 100%;
+    }
+
+    #back{
+      margin-top: 7rem;
+      width: 90%;
+    }
+  }
+  /* =============================END MEDIA QUERY========================== */
